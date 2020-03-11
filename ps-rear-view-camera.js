@@ -298,6 +298,11 @@ function render() {
 
 	// Student: set rearCam so it's pointing in the opposite direction than the camera
 
+	var pos = camera.position;
+	pos.y = -pos.y;
+
+	rearCam = pos;
+
 	// rearview render
 	renderer.enableScissorTest( true );
 	// setScissor could be set just once in this particular case,
