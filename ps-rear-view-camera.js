@@ -298,9 +298,8 @@ function render() {
 
 	// Student: set rearCam so it's pointing in the opposite direction than the camera
 
-	var pos = camera.position;
-//	pos.y = -pos.y;
-
+	//var pos = camera.position;
+	//pos.y = -pos.y;
 	//rearCam = pos;
 
 	// rearview render
