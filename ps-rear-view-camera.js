@@ -301,7 +301,7 @@ function render() {
 	var pos = camera.position;
 	pos.y = -pos.y;
 
-	rearCam = pos;
+	//rearCam = pos;
 
 	// rearview render
 	renderer.enableScissorTest( true );
