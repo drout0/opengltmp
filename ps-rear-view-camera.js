@@ -298,9 +298,7 @@ function render() {
 
 	// Student: set rearCam so it's pointing in the opposite direction than the camera
 
-	var rearCam_angle = cameraControls.getPolarAngle() * 100;
-	rearCam.position = camera.position;
-	rearCam.lookAt( new THREE.Vector3( 0, rearCam_angle, 0 ) );
+	rearCam.position = camera.position * 2;
 
 	// rearview render
 	renderer.enableScissorTest( true );
