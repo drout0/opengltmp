@@ -16,6 +16,20 @@ var rearTarget;
 function fillScene() {
 	scene = new THREE.Scene();
 	scene.fog = new THREE.Fog( 0xDDDDDD, 3000, 4000 );
+	
+// ArrowHelper	
+var sourcePos = new THREE.Vector3(0, 0, 0);
+var targetPos = new THREE.Vector3(0, 50, 0);
+var direction = new THREE.Vector3().sub(targetPos, sourcePos);
+var arrow = new THREE.ArrowHelper(direction.clone().normalize(), sourcePos, direction.length(), 0x00ff00);
+scene.add(arrow);
+
+var newSourcePos = new THREE.Vector3(10, 10, 10);
+var newTargetPos = new THREE.Vector3(60, 10, 10);
+arrow.position.set(newSourcePos);
+direction = new THREE.Vector3().sub(newTargetPos, newSourcePos);
+arrow.setDirection(direction.normalize());
+arrow.setLength(direction.length());	
 
 	// LIGHTS
 
