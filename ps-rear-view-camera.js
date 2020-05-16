@@ -15,7 +15,7 @@ var rearTarget;
 
 function fillScene() {
 	scene = new THREE.Scene();
-	scene.fog = new THREE.Fog( 0xDDDDDD, 3000, 4000 );
+	//scene.fog = new THREE.Fog( 0xDDDDDD, 3000, 4000 );
 	
 // ArrowHelper	
 var sourcePos = new THREE.Vector3(0, 0, 0);
@@ -48,7 +48,7 @@ arrow.setLength(direction.length());
 	// some objects
 	var x,z;
 
-	for ( x = -4500; x <= 4500; x += 1000 ) {
+	for ( x = -4500; false && x <= 4500; x += 1000 ) {
 		for ( z = -4500; z <= 4500; z += 1000 ) {
 			var coneMaterial = new THREE.MeshLambertMaterial();
 			// color wheel
