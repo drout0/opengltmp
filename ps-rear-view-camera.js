@@ -23,7 +23,7 @@ var targetPos = new THREE.Vector3(0, 0, 50);
 var direction = new THREE.Vector3().subVectors(targetPos, sourcePos) ;
 var arrow = new THREE.ArrowHelper(direction.clone().normalize(), sourcePos, direction.length(), 0x00ff00);
 scene.add(arrow);
-console.log(">>> arrow ", arrow.direction ) ;
+console.log(">>> arrow ", arrow.position ) ;
 
 var newSourcePos = new THREE.Vector3(10, 10, 10);
 var newTargetPos = new THREE.Vector3(60, 10, 10);
