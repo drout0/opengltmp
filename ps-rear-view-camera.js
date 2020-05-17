@@ -107,7 +107,7 @@ arrow.setLength(direction.length());
 	cube.position.x = -45;	// (20+32) - half of width (20+64+110)/2
 	cube.position.y = 4/2;	// half of height
 	cube.position.z = 0;	// centered at origin
-	scene.add( cube );
+	//scene.add( cube );
 
 	// feet
 	cube = new THREE.Mesh(
