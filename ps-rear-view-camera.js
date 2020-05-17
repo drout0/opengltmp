@@ -27,7 +27,7 @@ scene.add(arrow);
 var newSourcePos = new THREE.Vector3(10, 10, 10);
 var newTargetPos = new THREE.Vector3(60, 10, 10);
 arrow.position.set(newSourcePos);
-direction = new THREE.Vector3().sub(newTargetPos, newSourcePos);
+direction = new THREE.Vector3().subVectors(newTargetPos, newSourcePos);
 arrow.setDirection(direction.normalize());
 arrow.setLength(direction.length());	
 
